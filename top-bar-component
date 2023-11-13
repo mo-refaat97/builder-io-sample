@@ -1,0 +1,60 @@
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+
+@Component({
+  selector: "my-component, MyComponent",
+  template: `
+    <header class="flex w-full items-center justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/4790c714-fa65-4aa6-acf9-98b831da6d71?apiKey=b444421240cf4abc99f47053a385ecd8&"
+        class="aspect-[5.13] object-contain object-center w-[123px] overflow-hidden shrink-0 max-w-full my-auto"
+        alt="Logo"
+      />
+      <nav class="self-stretch flex items-start justify-between gap-2 max-md:justify-center">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/38a8c4f7-9bb7-4978-819c-8d5bc517df34?apiKey=b444421240cf4abc99f47053a385ecd8&"
+          class="aspect-square object-contain object-center w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
+          alt="Icon 1"
+        />
+        <div class="bg-zinc-200 self-center w-px shrink-0 h-7 my-auto"></div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/93188120-0685-46e4-bb83-3090ac938ed4?apiKey=b444421240cf4abc99f47053a385ecd8&"
+          class="aspect-square object-contain object-center w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
+          alt="Icon 2"
+        />
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/81618188-c068-436a-ae9f-6ccd295e4723?apiKey=b444421240cf4abc99f47053a385ecd8&"
+          class="aspect-square object-contain object-center w-6 overflow-hidden self-center shrink-0 max-w-full my-auto"
+          alt="Icon 3"
+        />
+        <div
+          class="justify-center text-white text-base font-medium leading-6 tracking-normal whitespace-nowrap bg-sky-800 self-stretch aspect-square p-4 rounded-[100px]"
+          aria-label="Letter B"
+        >
+          B
+        </div>
+        <div class="self-center flex grow basis-[0%] flex-col items-stretch my-auto">
+          <div class="justify-center text-zinc-900 text-xs font-medium leading-4 tracking-wide">
+            Belal Gaber
+          </div>
+          <div class="text-zinc-500 text-xs font-medium leading-4 tracking-wide whitespace-nowrap">
+            Organization Name
+          </div>
+        </div>
+      </nav>
+    </header>
+  `,
+})
+export class MyComponent {}
+
+@NgModule({
+  declarations: [MyComponent],
+  imports: [CommonModule],
+  exports: [MyComponent],
+})
+export class MyComponentModule {}
